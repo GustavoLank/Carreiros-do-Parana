@@ -28,6 +28,7 @@ services:
       dockerfile: apps/web/Dockerfile
     environment:
       WEB_PORT: ${WEB_PORT}
+      PORT: ${WEB_PORT}
     ports:
       - "${WEB_PORT}:${WEB_PORT}"
     depends_on:
